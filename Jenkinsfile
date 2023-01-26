@@ -95,7 +95,6 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
                             sh "echo 'Hola caracola'"
                         }
                     }
-                }
         /*
         stage('SonarQube analysis') {
           steps {
