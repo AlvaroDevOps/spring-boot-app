@@ -21,7 +21,6 @@ spec:
     - sleep
     args:
     - infinity
-  - infinity
   - name: imgkaniko
     image: gcr.io/kaniko-project/executor:debug
     imagePullPolicy: Always
