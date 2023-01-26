@@ -47,6 +47,15 @@ spec:
                 junit "target/surefire-reports/*.xml"
             }
         }
+        //7
+        stage('Package') {
+            steps {
+            echo '''07# Stage - Package
+(develop y main): Generación del artefacto .jar (SNAPSHOT)
+'''
+                sh 'mvn package -DskipTests'
+            }
+        }
         //8
         stage('Build & Push') {
             steps {
