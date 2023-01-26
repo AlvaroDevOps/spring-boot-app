@@ -32,6 +32,8 @@ spec:
     imagePullPolicy: Always
     command:
     - sleep
+    args:
+    - infinity
 '''
             // Can also wrap individual steps:
             // container('shell') {
@@ -93,7 +95,8 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
             steps {
                     container('springboot') {
                     script {
-                            sh "echo 'Hola caracola'"
+                            sh 'echo "Hola caracola"'
+                            sh 'sleep infinity'
                         }
                     }
             }
