@@ -24,13 +24,13 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties>
-                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+            <!-- Optional URL to server. Default value is http://localhost:9000 -->
+            <!--<properties>
                 <sonar.host.url>
                     http://sonarqube:9000
                 </sonar.host.url>
                 <sonar.login>squ_aef171a93ea1b6dbea7ecac58bd1e2a559dec9ce</sonar.login>
-            </properties>
+            </properties>-->
         </profile>
     </profiles>
 
