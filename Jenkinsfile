@@ -89,12 +89,15 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
             }
         }
         //Mi contenedor de DockerHub
-        container('springboot') {
-                   
+        stage('My Docker') {
+            steps {
+                    container('springboot') {
                     script {
                             sh "echo 'Hola caracola'"
                         }
                     }
+            }
+        }
         /*
         stage('SonarQube analysis') {
           steps {
