@@ -1,20 +1,11 @@
 def versionPom = ""
 pipeline{
-	agent {
-        node {
-            label "nodo-java"
-        }
-    }
+    agent any
 
-    environment {
-        registryCredential='docker-hub-credentials'
-        registryBackend = 'franaznarteralco/backend-demo'
-    }
-
-	stages {
+    stages {
         stage('SonarQube analysis') {
           steps {
-            withSonarQubeEnv(credentialsId: "sonarqube-credentials", installationName: "sonarqube-server"){
+            withSonarQubeEnv(credentialsId: "tokensonarqube", installationName: "SonarQubeServer"){
                 sh "mvn clean verify sonar:sonar -DskipTests"
             }
           }
@@ -33,6 +24,6 @@ pipeline{
           }
         }
 
-	}
+    }
 
 }
