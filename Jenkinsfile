@@ -28,7 +28,7 @@ spec:
     - /busybox/cat
     tty: true
   - name: springboot
-    image: docker push alvarodevcenter/app-pf-backend:latest
+    image: alvarodevcenter/app-pf-backend:latest
     imagePullPolicy: Always
     command:
     - sleep
@@ -92,7 +92,7 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
         stage('springboot') {
             steps {
             sh 'echo'
-            sh 'sleep 3600'
+            echo "Mi Docker"
             }
         }
         /*
