@@ -137,7 +137,7 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
             }
           }
         }*/
-
+//Comentario
         //11
         stage('Nexus') {
             environment {
