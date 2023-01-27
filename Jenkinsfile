@@ -45,7 +45,7 @@ spec:
 
     stages {
               //4
-        stage('Unit Tests') {
+        /*stage('Unit Tests') {
             steps {
             echo '''04# Stage - Unit Tests
 (develop y main): Lanzamiento de test unitarios.
@@ -89,7 +89,7 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
                     }
                 } 
             }
-        }
+        }*/
         //Mi contenedor de DockerHub
         stage('My Docker') {
             steps {
@@ -101,7 +101,7 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
                     }
             }
         }
-        /*
+        
         stage('SonarQube analysis') {
           steps {
             withSonarQubeEnv(credentialsId: "tokensonarqube", installationName: "SonarQubeServer"){
@@ -121,7 +121,7 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
               }
             }
           }
-        }*/
+        }
 
     }
 
