@@ -44,7 +44,7 @@ spec:
     }
 
     stages {
-      
+
       //1
         stage('Prepare environment') {
             steps {
@@ -143,7 +143,7 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
             environment {
                 NEXUS_VERSION = "nexus3"
                 NEXUS_PROTOCOL = "http"
-                NEXUS_URL = "192.168.58.1:8081"
+                NEXUS_URL = "192.168.49.3:8081"
                 NEXUS_REPOSITORY = "bootcamp/"
                 NEXUS_CREDENTIAL_ID = "nexusidentity"
             }
