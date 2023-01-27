@@ -89,7 +89,7 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
                     }
                 } 
             }
-        }*/
+        }
         //Mi contenedor de DockerHub
         stage('My Docker') {
             steps {
@@ -100,7 +100,7 @@ Para el etiquetado de la imagen se utilizará la versión del pom.xml
                         }
                     }
             }
-        }
+        }*/
         
         stage('SonarQube analysis') {
           steps {
